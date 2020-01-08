@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>First Vue JS</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id='app'>
+		<h1>{{ person.name }}</h1>
+		<h1>{{ name }}</h1>
+		<h2>{{ person.height }}</h2>
+		<p>{{ sayHi('morgen') }}</p>
+		<!--Data Binding -->
+		<a :href="website">Google</a>
+		<br/>
+		
+		<input type="text" :value="person.name" />
+		<p v-html="atag"></p>
+	</div>
+	
+	
+	<script src="app.js"></script>
+</body>
+</html>
