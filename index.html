@@ -6,8 +6,9 @@
 <body>
 	<div id='app'>
 	<h3>{{ myValue }}</h3>
-		<button v-on:click="myValue++">+</button>
-		<button v-on:click="myValue--">-</button>
+		<button v-on:click="add" v-on:mouseover="add">+</button>
+		<button v-on:click="subtract" v-on:mouseover="subtract">-</button>
+		<button v-on:click.once="add">1mal +</button>
 	</div>
 	
 	
